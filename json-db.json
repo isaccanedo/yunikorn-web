@@ -1,0 +1,460 @@
+{
+  "clusters": [
+    {
+      "clusterName": "cluster-1",
+      "totalApplications": "1",
+      "failedApplications": "",
+      "pendingApplications": "",
+      "runningApplications": "1",
+      "completedApplications": "",
+      "totalContainers": "2",
+      "failedContainers": "",
+      "pendingContainers": "",
+      "runningContainers": "2",
+      "activeNodes": "1",
+      "totalNodes": "1",
+      "failedNodes": ""
+    }
+  ],
+  "queues": {
+    "queuename": "root",
+    "status": "Active",
+    "partition": "default",
+    "maxResource": {},
+    "guaranteedResource": {},
+    "allocatedResource": {},
+    "isLeaf": false,
+    "isManaged": true,
+    "properties": {
+      "application.sort.policy": "stateaware"
+    },
+    "parent": "",
+    "template": {
+      "maxResource": {
+        "memory": 600000
+      },
+      "guaranteedResource": {
+        "memory": 400000
+      },
+      "properties": {
+        "application.sort.policy": "stateaware"
+      }
+    },
+    "children": [
+      {
+        "queuename": "root.a",
+        "status": "Active",
+        "partition": "",
+        "maxResource": {
+          "memory": 800000,
+          "vcore": 80000000
+        },
+        "guaranteedResource": {
+          "memory": 500000,
+          "vcore": 50000000
+        },
+        "allocatedResource": {},
+        "isLeaf": false,
+        "isManaged": true,
+        "properties": {
+          "application.sort.policy": "stateaware"
+        },
+        "parent": "root",
+        "template": {
+          "maxResource": {
+            "memory": 600000
+          },
+          "guaranteedResource": {
+            "memory": 400000
+          },
+          "properties": {
+            "application.sort.policy": "stateaware"
+          }
+        },
+        "children": [
+          {
+            "queuename": "root.a.a1",
+            "status": "Active",
+            "partition": "",
+            "maxResource": {
+              "memory": 800000,
+              "vcore": 80000000
+            },
+            "guaranteedResource": {
+              "memory": 500000,
+              "vcore": 50000000
+            },
+            "allocatedResource": {},
+            "isLeaf": true,
+            "isManaged": true,
+            "properties": {
+              "application.sort.policy": "stateaware"
+            },
+            "parent": "root.a",
+            "template": null,
+            "children": [],
+            "absUsedCapacity": {}
+          }
+        ],
+        "absUsedCapacity": {}
+      },
+      {
+        "queuename": "root.b",
+        "status": "Active",
+        "partition": "",
+        "maxResource": {
+          "memory": 600000,
+          "vcore": 60000000
+        },
+        "guaranteedResource": {
+          "memory": 400000,
+          "vcore": 40000000
+        },
+        "allocatedResource": {},
+        "isLeaf": true,
+        "isManaged": true,
+        "properties": {
+          "application.sort.policy": "stateaware"
+        },
+        "parent": "root",
+        "template": null,
+        "children": [],
+        "absUsedCapacity": {}
+      },
+      {
+        "queuename": "root.c",
+        "status": "Active",
+        "partition": "",
+        "maxResource": {
+          "memory": 100000,
+          "vcore": 10000000
+        },
+        "guaranteedResource": {
+          "memory": 100000,
+          "vcore": 10000000
+        },
+        "allocatedResource": {},
+        "isLeaf": true,
+        "isManaged": true,
+        "properties": {
+          "application.sort.policy": "stateaware"
+        },
+        "parent": "root",
+        "template": null,
+        "children": [],
+        "absUsedCapacity": {}
+      }
+    ],
+    "absUsedCapacity": {}
+  },
+  "apps": [
+    {
+      "applicationID": "app-4",
+      "usedResource": {},
+      "maxUsedResource": {},
+      "partition": "default",
+      "queueName": "root.default",
+      "submissionTime": 1646038700214288000,
+      "finishedTime": null,
+      "allocations": [],
+      "applicationState": "New"
+    },
+    {
+      "applicationID": "app-1",
+      "usedResource": {
+        "memory": 50,
+        "vcore": 30
+      },
+      "maxUsedResource": {},
+      "partition": "default",
+      "queueName": "root.default",
+      "submissionTime": 1647932353565263000,
+      "finishedTime": 1647932353565363000,
+      "allocations": [
+        {
+          "allocationKey": "54e5d77b-f4c3-4607-8038-03c9499dd99d",
+          "allocationTags": null,
+          "uuid": "08033f9a-4699-403c-9204-6333856b41bd",
+          "resource": {
+            "memory": 50,
+            "vcore": 30
+          },
+          "priority": "<nil>",
+          "queueName": "root.default",
+          "nodeId": "node-0001",
+          "applicationId": "application-0002",
+          "partition": "default"
+        }
+      ],
+      "applicationState": "New"
+    },
+    {
+      "applicationID": "app-3",
+      "usedResource": {},
+      "maxUsedResource": {},
+      "partition": "default",
+      "queueName": "root.default",
+      "submissionTime": 1647932353565263000,
+      "finishedTime": 1647932353565363000,
+      "allocations": [],
+      "applicationState": "New"
+    },
+    {
+      "applicationID": "app-2",
+      "usedResource": {
+        "memory": 30,
+        "vcore": 30
+      },
+      "partition": "default",
+      "queueName": "root.default",
+      "submissionTime": 1647932353565263000,
+      "finishedTime": 1647932353565363000,
+      "allocations": [
+        {
+          "allocationKey": "54e5d77b-f4c3-4607-8038-03c9499dd99d",
+          "allocationTags": null,
+          "uuid": "08033f9a-4699-403c-9204-6333844444bd",
+          "resource": {
+            "memory": 10,
+            "vcore": 10
+          },
+          "priority": "<nil>",
+          "queueName": "root.default",
+          "nodeId": "node-0001",
+          "applicationId": "application-0002",
+          "partition": "default"
+        },
+        {
+          "allocationKey": "54e5d77b-f4c3-4607-8038-03c9499dd99d",
+          "allocationTags": null,
+          "uuid": "08033f9a-4699-403c-9204-6333846844bd",
+          "resource": {
+            "memory": 10,
+            "vcore": 10
+          },
+          "priority": "<nil>",
+          "queueName": "root.default",
+          "nodeId": "node-0001",
+          "applicationId": "application-0002",
+          "partition": "default"
+        },
+        {
+          "allocationKey": "54e5d77b-f4c3-4607-8038-03c9499dd99d",
+          "allocationTags": null,
+          "uuid": "08033f9a-4699-403c-9204-63338844888d",
+          "resource": {
+            "memory": 10,
+            "vcore": 10
+          },
+          "priority": "<nil>",
+          "queueName": "root.default",
+          "nodeId": "node-0001",
+          "applicationId": "application-0002",
+          "partition": "default"
+        }
+      ],
+      "applicationState": "New"
+    }
+  ],
+  "appHistory": [
+    {
+      "timestamp": 1585238263802408000,
+      "totalApplications": "0"
+    },
+    {
+      "timestamp": 1585238323803183000,
+      "totalApplications": "0"
+    },
+    {
+      "timestamp": 1585238383803268000,
+      "totalApplications": "1"
+    },
+    {
+      "timestamp": 1585238443804046000,
+      "totalApplications": "2"
+    },
+    {
+      "timestamp": 1585238503806253000,
+      "totalApplications": "1"
+    },
+    {
+      "timestamp": 1585238563807452000,
+      "totalApplications": "3"
+    }
+  ],
+  "containerHistory": [
+    {
+      "timestamp": 1585238263802408000,
+      "totalContainers": "0"
+    },
+    {
+      "timestamp": 1585238323803183000,
+      "totalContainers": "0"
+    },
+    {
+      "timestamp": 1585238383803268000,
+      "totalContainers": "1"
+    },
+    {
+      "timestamp": 1585238443804046000,
+      "totalContainers": "2"
+    },
+    {
+      "timestamp": 1585238503806253000,
+      "totalContainers": "1"
+    },
+    {
+      "timestamp": 1585238563807452000,
+      "totalContainers": "3"
+    }
+  ],
+  "nodes": [
+    {
+      "nodeID": "node-1",
+      "hostName": "",
+      "rackName": "",
+      "capacity": {
+        "ephemeral-storage": 62725623808,
+        "hugepages-1Gi": 0,
+        "hugepages-2Mi": 0,
+        "memory": 2081755136,
+        "pods": 110,
+        "vcore": 6000
+      },
+      "allocated": {
+        "memory": 0,
+        "vcore": 0
+      },
+      "occupied": {
+        "memory": 577716800,
+        "vcore": 200
+      },
+      "available": {
+        "ephemeral-storage": 62725623808,
+        "hugepages-1Gi": 0,
+        "hugepages-2Mi": 0,
+        "memory": 1504038336,
+        "pods": 110,
+        "vcore": 5800
+      },
+      "utilized": {
+        "memory": 0,
+        "vcore": 0
+      },
+      "allocations": [
+        {
+          "allocationKey": "alloc-1",
+          "allocationTags": null,
+          "uuid": "alloc-1-uuid",
+          "resource": {
+            "memory": 500,
+            "vcore": 300
+          },
+          "priority": "0",
+          "queueName": "root.default",
+          "nodeId": "node-1",
+          "applicationId": "app1",
+          "partition": ""
+        }
+      ],
+      "schedulable": true
+    },
+    {
+      "nodeID": "node-2",
+      "hostName": "",
+      "rackName": "",
+      "capacity": {
+        "ephemeral-storage": 62725623808,
+        "hugepages-1Gi": 0,
+        "hugepages-2Mi": 0,
+        "memory": 2081755136,
+        "pods": 110,
+        "vcore": 6000
+      },
+      "allocated": {
+        "memory": 0,
+        "vcore": 0
+      },
+      "occupied": {
+        "memory": 577716800,
+        "vcore": 200
+      },
+      "available": {
+        "ephemeral-storage": 62725623808,
+        "hugepages-1Gi": 0,
+        "hugepages-2Mi": 0,
+        "memory": 1504038336,
+        "pods": 110,
+        "vcore": 5800
+      },
+      "utilized": {
+        "memory": 0,
+        "vcore": 0
+      },
+      "allocations": [
+        {
+          "allocationKey": "alloc-2",
+          "allocationTags": null,
+          "uuid": "alloc-2-uuid",
+          "resource": {
+            "memory": 500,
+            "vcore": 300
+          },
+          "priority": "0",
+          "queueName": "root.default",
+          "nodeId": "node-2",
+          "applicationId": "app1",
+          "partition": ""
+        }
+      ],
+      "schedulable": true
+    }
+  ],
+  "partitions": [
+    {
+      "name": "default",
+      "clusterId": "mycluster",
+      "state": "Active",
+      "lastStateTransitionTime": "2021-05-20 12:25:49.018953 +0530 IST m=+0.005949717",
+      "capacity": {
+        "capacity": "[memory:1000 vcore:1000]",
+        "usedCapacity": "[memory:800 vcore:500]"
+      },
+      "nodeSortingPolicy": {
+        "type": "fair",
+        "resourceWeights": {
+          "memory": 1.5,
+          "vcore": 1.3
+        }
+      },
+      "applications": {
+        "New": 5,
+        "Pending": 5,
+        "total": 10
+      }
+    },
+    {
+      "name": "gpu",
+      "clusterId": "mycluster",
+      "state": "Active",
+      "lastStateTransitionTime": "2021-05-19 12:25:49.018953 +0530 IST m=+0.005949717",
+      "capacity": {
+        "capacity": "[memory:2000 vcore:2000]",
+        "usedCapacity": "[memory:500 vcore:300]"
+      },
+      "nodeSortingPolicy": {
+        "type": "binpacking",
+        "resourceWeights": {
+          "memory": 0,
+          "vcore": 4.11
+        }
+      },
+      "applications": {
+        "New": 5,
+        "Running": 10,
+        "Pending": 5,
+        "total": 20
+      }
+    }
+  ]
+}

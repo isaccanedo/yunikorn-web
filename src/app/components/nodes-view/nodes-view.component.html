@@ -1,0 +1,147 @@
+<!--
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ -->
+
+<div class="top-part">
+  <label class="part-label">Partition: </label>
+  <mat-form-field>
+    <mat-select
+      [(value)]="partitionSelected"
+      (selectionChange)="onPartitionSelectionChanged($event)"
+    >
+      <mat-option *ngFor="let part of partitionList" [value]="part.value">
+        {{ part.name }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<div class="nodes-view">
+  <div class="mat-elevation-z8">
+    <mat-table [dataSource]="nodeDataSource" matSort>
+      <ng-container [matColumnDef]="columnDef.colId" *ngFor="let columnDef of nodeColumnDef">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>{{ columnDef.colName }}</mat-header-cell>
+
+        <ng-container
+          *ngIf="
+            ['capacity', 'occupied', 'allocated', 'available'].includes(columnDef.colId);
+            else renderNext_1
+          "
+        >
+          <mat-cell *matCellDef="let element">
+            <ng-container *ngIf="columnDef.colFormatter; else showNodeRawData">
+              <span [innerHTML]="columnDef.colFormatter(element[columnDef.colId])"></span>
+            </ng-container>
+            <ng-template #showNodeRawData>
+              <span>{{ element[columnDef.colId] }}</span>
+            </ng-template>
+          </mat-cell>
+        </ng-container>
+
+        <ng-template #renderNext_1>
+          <mat-cell *matCellDef="let element">{{ element[columnDef.colId] || 'n/a' }}</mat-cell>
+        </ng-template>
+      </ng-container>
+
+      <ng-container matColumnDef="indicatorIcon">
+        <mat-header-cell *matHeaderCellDef class="indicator-icon"></mat-header-cell>
+        <mat-cell *matCellDef="let element" class="indicator-icon">
+          <span>
+            <i class="fas fa-plus-circle" *ngIf="!element.isSelected"></i>
+            <i class="fas fa-minus-circle" *ngIf="element.isSelected"></i>
+          </span>
+        </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="noRecord">
+        <mat-footer-cell *matFooterCellDef>
+          <div class="no-record">No records found</div>
+        </mat-footer-cell>
+      </ng-container>
+
+      <mat-header-row *matHeaderRowDef="nodeColumnIds"></mat-header-row>
+
+      <mat-row
+        *matRowDef="let row; columns: nodeColumnIds"
+        [class.selected-row]="selectedRow === row"
+        (click)="toggleRowSelection(row)"
+      ></mat-row>
+
+      <mat-footer-row
+        *matFooterRowDef="['noRecord']"
+        [ngStyle]="{ display: isNodeDataSourceEmpty() ? '' : 'none' }"
+      ></mat-footer-row>
+    </mat-table>
+
+    <mat-paginator
+      #nodesViewMatPaginator
+      [pageSizeOptions]="[10, 20, 50, 100]"
+      [ngStyle]="{ display: isNodeDataSourceEmpty() ? 'none' : '' }"
+      (page)="onPaginatorChanged()"
+      showFirstLastButtons
+    ></mat-paginator>
+  </div>
+
+  <div class="node-allocations" [ngStyle]="{ display: selectedRow ? '' : 'none' }">
+    <h3>Allocations</h3>
+    <mat-divider></mat-divider>
+
+    <div class="mat-elevation-z8">
+      <mat-table [dataSource]="allocDataSource">
+        <ng-container [matColumnDef]="columnDef.colId" *ngFor="let columnDef of allocColumnDef">
+          <mat-header-cell *matHeaderCellDef>{{ columnDef.colName }}</mat-header-cell>
+
+          <ng-container *ngIf="columnDef.colId === 'resource'; else renderNext_2">
+            <mat-cell *matCellDef="let element">
+              <ng-container *ngIf="columnDef.colFormatter; else showAllocRowData">
+                <span [innerHTML]="columnDef.colFormatter(element[columnDef.colId])"></span>
+              </ng-container>
+              <ng-template #showAllocRowData>
+                <span>{{ element[columnDef.colId] }}</span>
+              </ng-template>
+            </mat-cell>
+          </ng-container>
+
+          <ng-template #renderNext_2>
+            <mat-cell *matCellDef="let element">{{ element[columnDef.colId] || 'n/a' }}</mat-cell>
+          </ng-template>
+        </ng-container>
+
+        <ng-container matColumnDef="noRecord">
+          <mat-footer-cell *matFooterCellDef>
+            <div class="no-record">No records found</div>
+          </mat-footer-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="allocColumnIds"></mat-header-row>
+
+        <mat-row *matRowDef="let row; columns: allocColumnIds"></mat-row>
+
+        <mat-footer-row
+          *matFooterRowDef="['noRecord']"
+          [ngStyle]="{ display: isAllocDataSourceEmpty() ? '' : 'none' }"
+        ></mat-footer-row>
+      </mat-table>
+
+      <mat-paginator
+        #allocationMatPaginator
+        [pageSizeOptions]="[10, 20, 50, 100]"
+        [ngStyle]="{ display: isAllocDataSourceEmpty() ? 'none' : '' }"
+        showFirstLastButtons
+      ></mat-paginator>
+    </div>
+  </div>
+</div>
