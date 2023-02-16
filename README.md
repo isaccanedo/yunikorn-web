@@ -48,7 +48,7 @@ As compilações de imagens são voltadas para uma compilação de produção e 
 Execute `make image` para criar a imagem do docker `apache/yunikorn:web-latest`.
 Execute `make run` para criar a imagem e implantar o contêiner a partir da imagem do docker `apache/yunikorn:web-latest`.
 
-You can set `REGISTRY`, `VERSION` and `DOCKER_ARCH` in the commandline to build docker image with a specified version, registry and host architecture. For example,
+Você pode definir `REGISTRY`, `VERSION` e `DOCKER_ARCH` na linha de comando para criar uma imagem do docker com uma versão, registro e arquitetura de host especificados. Por exemplo,
 ```
 make image REGISTRY=apache VERSION=latest DOCKER_ARCH=amd64
 ```
