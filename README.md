@@ -22,7 +22,7 @@ Depende do `yunikorn-core` que encapsula toda a lógica de agendamento real.
 
 Para obter informações detalhadas sobre os componentes e como criar o agendador geral, consulte o [yunikorn-core](https://github.com/apache/yunikorn-core).
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
+Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 13.3.0.
 
 ## Development Environment setup
 ### Dependencies
