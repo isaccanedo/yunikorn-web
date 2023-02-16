@@ -35,7 +35,7 @@ O projeto requer uma série de ferramentas externas a serem instaladas antes da 
 
 ### servidor de desenvolvimento
 
-Run `make start-dev` for a development server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Execute `make start-dev` para um servidor de desenvolvimento. Navegue até `http://localhost:4200/`. O aplicativo será recarregado automaticamente se você alterar qualquer um dos arquivos de origem.
 
 ## Build
 
