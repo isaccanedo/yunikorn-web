@@ -33,7 +33,7 @@ O projeto requer uma série de ferramentas externas a serem instaladas antes da 
 - [yarn](https://www.npmjs.com/package/yarn)
 - [json-server](https://www.npmjs.com/package/json-server)
 
-### Development server
+### servidor de desenvolvimento
 
 Run `make start-dev` for a development server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
