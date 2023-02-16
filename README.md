@@ -20,7 +20,7 @@
 A web do YuniKorn fornece uma interface da web na parte superior do agendador. Ele fornece informações sobre o status atual e histórico do agendador.
 Depende do `yunikorn-core` que encapsula toda a lógica de agendamento real.
 
-For detailed information on the components and how to build the overall scheduler please see the [yunikorn-core](https://github.com/apache/yunikorn-core).
+Para obter informações detalhadas sobre os componentes e como criar o agendador geral, consulte o [yunikorn-core](https://github.com/apache/yunikorn-core).
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
