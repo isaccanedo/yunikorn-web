@@ -37,7 +37,7 @@ O projeto requer uma série de ferramentas externas a serem instaladas antes da 
 
 Execute `make start-dev` para um servidor de desenvolvimento. Navegue até `http://localhost:4200/`. O aplicativo será recarregado automaticamente se você alterar qualquer um dos arquivos de origem.
 
-## Build
+## Construir
 
 Run `make build` to build the project. The build artifacts will be stored in the `dist/` directory. Use `make build-prod` for a production build.
 Production builds will add the `--prod` flag to the angular build.
