@@ -26,7 +26,7 @@ Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli
 
 ## Configuração do ambiente de desenvolvimento
 ### Dependências
-The project requires a number of external tools to be installed before the build and development:
+O projeto requer uma série de ferramentas externas a serem instaladas antes da construção e desenvolvimento:
 - [Node.js](https://nodejs.org/en/)
 - [Angular CLI](https://github.com/angular/angular-cli)
 - [Karma](https://karma-runner.github.io)
