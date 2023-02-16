@@ -39,7 +39,7 @@ Execute `make start-dev` para um servidor de desenvolvimento. Navegue até `http
 
 ## Construir
 
-Run `make build` to build the project. The build artifacts will be stored in the `dist/` directory. Use `make build-prod` for a production build.
+Execute `make build` para compilar o projeto. The build artifacts will be stored in the `dist/` directory. Use `make build-prod` for a production build.
 Production builds will add the `--prod` flag to the angular build.
 
 ### Docker image build
