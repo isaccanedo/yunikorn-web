@@ -25,7 +25,7 @@ Para obter informações detalhadas sobre os componentes e como criar o agendado
 Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 13.3.0.
 
 ## Configuração do ambiente de desenvolvimento
-### Dependencies
+### Dependências
 The project requires a number of external tools to be installed before the build and development:
 - [Node.js](https://nodejs.org/en/)
 - [Angular CLI](https://github.com/angular/angular-cli)
