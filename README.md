@@ -18,7 +18,7 @@
 
 # Yunikorn web UI
 A web do YuniKorn fornece uma interface da web na parte superior do agendador. Ele fornece informações sobre o status atual e histórico do agendador.
-It depends on `yunikorn-core` which encapsulates all the actual scheduling logic.
+Depende do `yunikorn-core` que encapsula toda a lógica de agendamento real.
 
 For detailed information on the components and how to build the overall scheduler please see the [yunikorn-core](https://github.com/apache/yunikorn-core).
 
