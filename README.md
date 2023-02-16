@@ -50,7 +50,7 @@ Execute `make run` para criar a imagem e implantar o contêiner a partir da imag
 
 Você pode definir `REGISTRY`, `VERSION` e `DOCKER_ARCH` na linha de comando para criar uma imagem do docker com uma versão, registro e arquitetura de host especificados. Por exemplo,
 ```
-make image REGISTRY=apache VERSION=latest DOCKER_ARCH=amd64
+criar imagem REGISTRY=apache VERSION=último DOCKER_ARCH=amd64
 ```
 This command will build binary with version `web-latest` and the docker full image tag is `apache/yunikorn:web-amd64-latest`.
 
