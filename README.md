@@ -43,7 +43,7 @@ Execute `make build` para compilar o projeto. Os artefatos de compilação serã
 Compilações de produção adicionarão o sinalizador `--prod` à compilação angular.
 
 ### Construção de imagem do Docker
-Image builds are geared towards a production build and will always build with the `--prod` flag set.
+As compilações de imagens são voltadas para uma compilação de produção e sempre serão construídas com o sinalizador `--prod` definido.
 
 Run `make image` to build the docker image `apache/yunikorn:web-latest`. 
 Run `make run` to build the image and deploy the container from the docker image `apache/yunikorn:web-latest`.
