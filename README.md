@@ -42,7 +42,7 @@ Execute `make start-dev` para um servidor de desenvolvimento. Navegue até `http
 Execute `make build` para compilar o projeto. Os artefatos de compilação serão armazenados no diretório `dist/`. Use `make build-prod` para uma compilação de produção.
 Compilações de produção adicionarão o sinalizador `--prod` à compilação angular.
 
-### Docker image build
+### Construção de imagem do Docker
 Image builds are geared towards a production build and will always build with the `--prod` flag set.
 
 Run `make image` to build the docker image `apache/yunikorn:web-latest`. 
