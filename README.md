@@ -52,7 +52,7 @@ Você pode definir `REGISTRY`, `VERSION` e `DOCKER_ARCH` na linha de comando par
 ```
 criar imagem REGISTRY=apache VERSION=último DOCKER_ARCH=amd64
 ```
-This command will build binary with version `web-latest` and the docker full image tag is `apache/yunikorn:web-amd64-latest`.
+Este comando criará o binário com a versão `web-latest` e a tag de imagem completa do docker é `apache/yunikorn:web-amd64-latest`.
 
 The Makefile is smart enough to detect your host architecture but it will tag the image name.
 
