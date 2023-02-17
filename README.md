@@ -70,7 +70,7 @@ O aplicativo depende de [json-server](https://www.npmjs.com/package/json-server)
 Execute `yarn start` para iniciar o servidor de desenvolvimento angular e navegue até `http://localhost:4200/`.
 
 ## Mais ajuda
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Para obter mais ajuda sobre o Angular CLI, use `ng help` ou confira o [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 ## Code scaffolding
 Run `ng generate component component-name` to generate a new component.
