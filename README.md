@@ -75,7 +75,7 @@ Para obter mais ajuda sobre o Angular CLI, use `ng help` ou confira o [Angular C
 ## Estrutura de código
 Execute `ng generate component-name` para gerar um novo componente.
 
-You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Você também pode usar `ng generate directiva|pipe|service|class|guard|interface|enum|module`.
 
 ## Port configurations
 The default port used for the web server is port 9889 and is set in the `nginx/nginx.conf`. 
