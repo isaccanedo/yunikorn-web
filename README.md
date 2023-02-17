@@ -54,7 +54,7 @@ criar imagem REGISTRY=apache VERSION=último DOCKER_ARCH=amd64
 ```
 Este comando criará o binário com a versão `web-latest` e a tag de imagem completa do docker é `apache/yunikorn:web-amd64-latest`.
 
-The Makefile is smart enough to detect your host architecture but it will tag the image name.
+O Makefile é inteligente o suficiente para detectar sua arquitetura de host, mas marcará o nome da imagem.
 
 Run `make deploy-prod` to build and deploy the scheduler webapp using docker-compose.
 The project uses [multi-stage build](https://docs.docker.com/develop/develop-images/multistage-build/) feature of the docker and requires Docker 17.05 or higher.
