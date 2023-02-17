@@ -61,7 +61,7 @@ O projeto usa o recurso [compilação em vários estágios](https://docs.docker.
 
 ### Executando testes
 
-Todos os testes podem ser executados via `make test`. Ele primeiro criará o projeto e, em seguida, executará os testes de unidade seguidos pelos testes de ponta a ponta. Se você deseja executar os testes de unidade separadamente, execute `yarn test` para executá-los via [Karma](https://karma-runner.github.io). If you want to run the unit tests with code coverage, run `yarn test:coverage`.
+Todos os testes podem ser executados via `make test`. Ele primeiro criará o projeto e, em seguida, executará os testes de unidade seguidos pelos testes de ponta a ponta. Se você deseja executar os testes de unidade separadamente, execute `yarn test` para executá-los via [Karma](https://karma-runner.github.io). Se você deseja executar os testes de unidade com cobertura de código, execute `yarn test:coverage`.
 
 ## Local development
 Beside the simple all in way to start the development server via make you can also start a development environment manually. 
