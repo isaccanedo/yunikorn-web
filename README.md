@@ -77,7 +77,7 @@ Execute `ng generate component-name` para gerar um novo componente.
 
 Você também pode usar `ng generate directiva|pipe|service|class|guard|interface|enum|module`.
 
-## Port configurations
+## Configurações de porta
 The default port used for the web server is port 9889 and is set in the `nginx/nginx.conf`. 
 
 The port is also referenced in other scripts and configurations to this port also, if you change the port make sure that the other locations are updated:
