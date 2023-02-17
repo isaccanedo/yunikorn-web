@@ -69,7 +69,7 @@ Além da maneira simples de iniciar o servidor de desenvolvimento via make, voc�
 O aplicativo depende de [json-server](https://www.npmjs.com/package/json-server) para dados. Instale o json-server localmente. Execute `yarn start:srv` para iniciar o json-server para desenvolvimento local.
 Execute `yarn start` para iniciar o servidor de desenvolvimento angular e navegue até `http://localhost:4200/`.
 
-## Further help
+## Mais ajuda
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 ## Code scaffolding
