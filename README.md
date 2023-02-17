@@ -64,7 +64,7 @@ O projeto usa o recurso [compilação em vários estágios](https://docs.docker.
 Todos os testes podem ser executados via `make test`. Ele primeiro criará o projeto e, em seguida, executará os testes de unidade seguidos pelos testes de ponta a ponta. Se você deseja executar os testes de unidade separadamente, execute `yarn test` para executá-los via [Karma](https://karma-runner.github.io). Se você deseja executar os testes de unidade com cobertura de código, execute `yarn test:coverage`.
 
 ## Desenvolvimento local
-Beside the simple all in way to start the development server via make you can also start a development environment manually. 
+Além da maneira simples de iniciar o servidor de desenvolvimento via make, você também pode iniciar um ambiente de desenvolvimento manualmente. 
 
 The application depends on [json-server](https://www.npmjs.com/package/json-server) for data. Install json-server locally. Run `yarn start:srv` to start json-server for local development.
 Run `yarn start` to start the angular development server and navigate to `http://localhost:4200/`.
