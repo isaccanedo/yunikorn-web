@@ -66,7 +66,7 @@ Todos os testes podem ser executados via `make test`. Ele primeiro criará o pro
 ## Desenvolvimento local
 Além da maneira simples de iniciar o servidor de desenvolvimento via make, você também pode iniciar um ambiente de desenvolvimento manualmente. 
 
-The application depends on [json-server](https://www.npmjs.com/package/json-server) for data. Install json-server locally. Run `yarn start:srv` to start json-server for local development.
+O aplicativo depende de [json-server](https://www.npmjs.com/package/json-server) para dados. Install json-server locally. Run `yarn start:srv` to start json-server for local development.
 Run `yarn start` to start the angular development server and navigate to `http://localhost:4200/`.
 
 ## Further help
