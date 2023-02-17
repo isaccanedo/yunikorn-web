@@ -57,7 +57,7 @@ Este comando criará o binário com a versão `web-latest` e a tag de imagem com
 O Makefile é inteligente o suficiente para detectar sua arquitetura de host, mas marcará o nome da imagem.
 
 Execute `make deploy-prod` para construir e implantar o webapp agendador usando o docker-compose.
-The project uses [multi-stage build](https://docs.docker.com/develop/develop-images/multistage-build/) feature of the docker and requires Docker 17.05 or higher.
+O projeto usa o recurso [compilação em vários estágios](https://docs.docker.com/develop/develop-images/multistage-build/) do docker e requer o Docker 17.05 ou superior.
 
 ### Running tests
 
