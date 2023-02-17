@@ -73,7 +73,7 @@ Execute `yarn start` para iniciar o servidor de desenvolvimento angular e navegu
 Para obter mais ajuda sobre o Angular CLI, use `ng help` ou confira o [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 ## Estrutura de código
-Run `ng generate component component-name` to generate a new component.
+Execute `ng generate component-name` para gerar um novo componente.
 
 You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
