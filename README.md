@@ -67,7 +67,7 @@ Todos os testes podem ser executados via `make test`. Ele primeiro criará o pro
 Além da maneira simples de iniciar o servidor de desenvolvimento via make, você também pode iniciar um ambiente de desenvolvimento manualmente. 
 
 O aplicativo depende de [json-server](https://www.npmjs.com/package/json-server) para dados. Instale o json-server localmente. Execute `yarn start:srv` para iniciar o json-server para desenvolvimento local.
-Run `yarn start` to start the angular development server and navigate to `http://localhost:4200/`.
+Execute `yarn start` para iniciar o servidor de desenvolvimento angular e navegue até `http://localhost:4200/`.
 
 ## Further help
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
