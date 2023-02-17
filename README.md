@@ -59,7 +59,7 @@ O Makefile é inteligente o suficiente para detectar sua arquitetura de host, ma
 Execute `make deploy-prod` para construir e implantar o webapp agendador usando o docker-compose.
 O projeto usa o recurso [compilação em vários estágios](https://docs.docker.com/develop/develop-images/multistage-build/) do docker e requer o Docker 17.05 ou superior.
 
-### Running tests
+### Executando testes
 
 All tests can be executed via `make test`. It will first build the project and then execute the unit tests followed by the end to end tests.  
 If you want to run the unit tests separately, run `yarn test` to execute them via [Karma](https://karma-runner.github.io). If you want to run the unit tests with code coverage, run `yarn test:coverage`.
