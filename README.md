@@ -80,7 +80,7 @@ Você também pode usar `ng generate directiva|pipe|service|class|guard|interfac
 ## Configurações de porta
 A porta padrão usada para o servidor web é a porta 9889 e é definida em `nginx/nginx.conf`.
 
-The port is also referenced in other scripts and configurations to this port also, if you change the port make sure that the other locations are updated:
+A porta também é referenciada em outros scripts e configurações para esta porta também, se você alterar a porta, certifique-se de que os outros locais sejam atualizados:
 - Makefile
 
 ## How do I contribute code?
