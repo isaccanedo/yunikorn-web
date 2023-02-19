@@ -83,5 +83,5 @@ A porta padrão usada para o servidor web é a porta 9889 e é definida em `ngin
 A porta também é referenciada em outros scripts e configurações para esta porta também, se você alterar a porta, certifique-se de que os outros locais sejam atualizados:
 - Makefile
 
-## How do I contribute code?
+## Como faço para contribuir com código?
 See how to contribute code from [this guide](https://yunikorn.apache.org/community/how_to_contribute).
