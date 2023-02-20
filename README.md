@@ -84,4 +84,4 @@ A porta também é referenciada em outros scripts e configurações para esta po
 - Makefile
 
 ## Como faço para contribuir com código?
-See how to contribute code from [this guide](https://yunikorn.apache.org/community/how_to_contribute).
+Veja como contribuir com o código [deste guia](https://yunikorn.apache.org/community/how_to_contribute).
